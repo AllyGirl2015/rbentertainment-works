@@ -31,8 +31,8 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-300 mb-16 max-w-3xl mx-auto font-light"
           >
-            Whether you're a creator looking to collaborate or someone who wants to experience our worlds, 
-            we'd love to hear from you.
+            Whether you&apos;re a creator looking to collaborate or someone who wants to experience our worlds, 
+            we&apos;d love to hear from you.
           </motion.p>
 
           <motion.div 

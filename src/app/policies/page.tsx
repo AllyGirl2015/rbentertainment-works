@@ -55,7 +55,7 @@ export default function PoliciesPage() {
 
         <div className="mt-16 p-8 bg-white/5 border border-white/10 rounded-2xl text-center">
           <p className="text-lg text-gray-300 italic">
-            "These policies aren’t just paperwork — they are guidelines for trust. We are a builder's network — creative, human, and rooted in values."
+            &ldquo;These policies aren&apos;t just paperwork — they are guidelines for trust. We are a builder&apos;s network — creative, human, and rooted in values.&rdquo;
           </p>
         </div>
       </div>

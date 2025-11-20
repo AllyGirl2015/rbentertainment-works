@@ -82,7 +82,7 @@ export default function CommunityPage() {
                 </div>
               </div>
               <p className="font-medium text-white italic">
-                "RBEW is not a space where diversity is tolerated — it is celebrated, as long as it is paired with respect."
+                &ldquo;RBEW is not a space where diversity is tolerated — it is celebrated, as long as it is paired with respect.&rdquo;
               </p>
             </div>
           </section>

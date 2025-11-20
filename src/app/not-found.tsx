@@ -11,7 +11,7 @@ export default function NotFound() {
           Reality Not Found
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-md mx-auto">
-          Looks like this timeline doesn't exist... yet. Let's get you back to a reality we've already built.
+          Looks like this timeline doesn&apos;t exist... yet. Let&apos;s get you back to a reality we&apos;ve already built.
         </p>
         <div className="flex gap-4 justify-center">
           <Link

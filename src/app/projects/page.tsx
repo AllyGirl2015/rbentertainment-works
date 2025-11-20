@@ -81,7 +81,7 @@ export default function ProjectsPage() {
             </span>
           </h1>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto font-light italic mb-6">
-            "We don't just tell stories—we build realities."
+            &ldquo;We don&apos;t just tell stories—we build realities.&rdquo;
           </p>
           <p className="text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Welcome to the world of RBEW Projects—a creative frontier where stories, technologies, and dreams collide. 
@@ -195,7 +195,7 @@ export default function ProjectsPage() {
             Want to Collaborate?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Are you a developer, writer, musician, or creative visionary? We're always looking for new talent.
+            Are you a developer, writer, musician, or creative visionary? We&apos;re always looking for new talent.
           </p>
           <Link
             href="/contact"

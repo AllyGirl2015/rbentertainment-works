@@ -58,7 +58,7 @@ export default function AudioSight() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-16"
             >
-              At RBEW, we don't just <span className="font-bold text-purple-400 border-b border-purple-500/50">see</span> stories—
+              At RBEW, we don&apos;t just <span className="font-bold text-purple-400 border-b border-purple-500/50">see</span> stories—
               we <span className="font-bold text-cyan-400 border-b border-cyan-500/50">hear</span> them into being.
             </motion.p>
 
@@ -81,12 +81,12 @@ export default function AudioSight() {
                     </h3>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
                       <span className="font-bold text-purple-400">Audiosight</span> is our 
-                      signature method of storytelling through sound. It's the art of building emotion, world, and character using 
+                      signature method of storytelling through sound. It&apos;s the art of building emotion, world, and character using 
                       nothing but voice, music, and atmosphere.
                     </p>
                     
                     <p className="text-lg text-gray-300 leading-relaxed">
-                      Before visuals ever form, we're already painting scenes in your mind—with tones, rhythms, 
+                      Before visuals ever form, we&apos;re already painting scenes in your mind—with tones, rhythms, 
                       whispers, and heartbeats.
                     </p>
                   </div>

@@ -50,14 +50,14 @@ export default function About() {
                 <div>
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
                     Now as <span className="font-bold text-cyan-400">Reality Builders Entertainment Works</span>, 
-                    we're building a platform to help emerging creators thrive. We believe in lifting up the next generation 
+                    we&apos;re building a platform to help emerging creators thrive. We believe in lifting up the next generation 
                     of artists, writers, coders, and dreamers—giving them a foundation to rise within the industry.
                   </p>
                 </div>
                 <div>
                   <p className="text-lg text-gray-300 leading-relaxed">
                     We specialize in crafting stories yet untold, each world built from the ground up with purpose, passion, and 
-                    limitless depth. Whether it's novels, games, mods, or cinematic creations, every experience is hand-crafted 
+                    limitless depth. Whether it&apos;s novels, games, mods, or cinematic creations, every experience is hand-crafted 
                     to entertain, inspire, and transform.
                   </p>
                 </div>

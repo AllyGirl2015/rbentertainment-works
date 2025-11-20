@@ -60,7 +60,7 @@ export default function Projects() {
               Our Projects
             </h2>
             <p className="text-xl text-gray-400">
-              We don't just tell stories—we build realities. Explore our diverse portfolio of immersive experiences.
+              We don&apos;t just tell stories—we build realities. Explore our diverse portfolio of immersive experiences.
             </p>
           </div>
           <Link href="#contact" className="hidden md:flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold group">

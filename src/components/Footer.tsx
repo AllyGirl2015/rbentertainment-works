@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Github, Twitter, Linkedin, Mail, Heart } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -15,9 +16,11 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                <img
+                <Image
                   src="/RBEW_logo.jpg"
                   alt="RBEW Logo"
+                  width={48}
+                  height={48}
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -40,7 +43,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md mb-8">
-              Where imagination isn't just explored, it's engineered. We are a creative studio dedicated to building immersive worlds across multiple mediums.
+              Where imagination isn&apos;t just explored, it&apos;s engineered. We are a creative studio dedicated to building immersive worlds across multiple mediums.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-cyan-400 transition-colors">

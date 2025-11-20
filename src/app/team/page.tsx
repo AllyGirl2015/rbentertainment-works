@@ -1,5 +1,6 @@
 import { Sparkles, Mic2, PenTool, Code, Palette } from 'lucide-react';
 import { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Team - RBEW | Reality Builders Entertainment Works",
@@ -22,7 +23,7 @@ export default function TeamPage() {
             Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Builders</span>
           </h1>
           <p className="text-2xl text-gray-300 font-light italic mb-12">
-            "We don’t work for the future. We work with the people shaping it."
+            &ldquo;We don&apos;t work for the future. We work with the people shaping it.&rdquo;
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-wider text-gray-500">
             <span className="px-4 py-2 border border-white/10 rounded-full">Writers</span>
@@ -43,9 +44,11 @@ export default function TeamPage() {
           <div className="flex flex-col md:flex-row gap-12 items-start relative z-10">
             <div className="w-full max-w-sm mx-auto md:max-w-none md:w-1/3">
               <div className="aspect-[3/4] bg-gray-800 rounded-2xl overflow-hidden relative shadow-2xl border border-white/10">
-                 <img 
+                 <Image 
                    src="/alissa.jpg" 
                    alt="Alissa M.R. Eldridge - Founder & Visionary Creator" 
+                   width={400}
+                   height={533}
                    className="w-full h-full object-cover"
                  />
               </div>
@@ -70,7 +73,7 @@ export default function TeamPage() {
                   <li><strong>Alissa</strong>, chosen as her true name—the beginning of her real story.</li>
                 </ul>
                 <blockquote className="text-xl font-light italic text-white border-l-4 border-cyan-500 pl-6 py-2 my-8 bg-white/5 rounded-r-xl">
-                  "My name is a story. One of survival, rebirth, and becoming who I was always meant to be."
+                  &ldquo;My name is a story. One of survival, rebirth, and becoming who I was always meant to be.&rdquo;
                 </blockquote>
                 
                 <h3 className="text-xl font-bold text-white mt-8 mb-4 flex items-center gap-2">

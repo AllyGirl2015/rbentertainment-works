@@ -38,7 +38,7 @@ export default function StoriesPage() {
                 <h3 className="text-2xl font-bold mb-3 text-white">A Beautiful Deception</h3>
                 <p className="text-sm text-pink-400 mb-4 font-mono">Book 1 • Available Now</p>
                 <p className="text-gray-400 mb-6">
-                  When Mat receives a mysterious pendant, he's thrust into a world where reality reshapes around him. Transformed into Isabel, she must navigate identity, memory, and self-worth.
+                  When Mat receives a mysterious pendant, he&apos;s thrust into a world where reality reshapes around him. Transformed into Isabel, she must navigate identity, memory, and self-worth.
                 </p>
                 <span className="inline-block px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium border border-pink-500/30">
                   Published on KDP

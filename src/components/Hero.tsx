@@ -48,9 +48,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-lg sm:text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed font-light"
         >
-          Where imagination isn't just explored,{' '}
+          Where imagination isn&apos;t just explored,{' '}
           <span className="font-bold text-cyan-400 border-b-2 border-cyan-500/50 pb-1">
-            it's engineered
+            it&apos;s engineered
           </span>
           . We craft stories yet untold, each world built from the ground up with purpose, passion, and limitless depth.
         </motion.p>

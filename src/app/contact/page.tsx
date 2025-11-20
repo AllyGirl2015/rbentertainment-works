@@ -49,7 +49,7 @@ export default function ContactPage() {
             Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 pb-2">Touch</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
-            Have a question, collaboration idea, or just want to say hello? We'd love to hear from you.
+            Have a question, collaboration idea, or just want to say hello? We&apos;d love to hear from you.
           </p>
         </motion.div>
 
@@ -154,7 +154,7 @@ export default function ContactPage() {
                   className="p-4 bg-green-500/10 border border-green-500/20 rounded-xl text-green-400 flex items-center gap-3"
                 >
                   <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                  <p>Message sent successfully! We'll get back to you soon.</p>
+                  <p>Message sent successfully! We&apos;ll get back to you soon.</p>
                 </motion.div>
               )}
 
@@ -224,7 +224,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-              <h3 className="text-xl font-bold mb-6 text-white">What We're Looking For</h3>
+              <h3 className="text-xl font-bold mb-6 text-white">What We&apos;re Looking For</h3>
               <ul className="space-y-4">
                 {[
                   "Writers • Coders • Builders",

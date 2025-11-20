@@ -9,7 +9,7 @@ export default function Team() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            "We don't work for the future. We work with the people shaping it."
+            &ldquo;We don&apos;t work for the future. We work with the people shaping it.&rdquo;
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function Team() {
                 to her legacy. Alissa, chosen as her true name—the beginning of her real story.
               </p>
               <blockquote className="border-l-4 border-cyan-500 pl-4 italic text-lg">
-                "My name is a story. One of survival, rebirth, and becoming who I was always meant to be."
+                &ldquo;My name is a story. One of survival, rebirth, and becoming who I was always meant to be.&rdquo;
               </blockquote>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Team() {
               Join the Builders of Reality
             </h3>
             <p className="text-gray-300 mb-8">
-              Whether you're a writer, builder, coder, artist, voice talent, or visionary — we believe great stories 
+              Whether you&apos;re a writer, builder, coder, artist, voice talent, or visionary — we believe great stories 
               come from shared dreams, not top-down commands.
             </p>
             <a href="#contact" className="btn-neon-purple inline-flex items-center gap-2">

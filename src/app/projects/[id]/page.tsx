@@ -448,7 +448,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Interested in This Project?</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Want to learn more, contribute, or collaborate? We'd love to have you on board.
+              Want to learn more, contribute, or collaborate? We&apos;d love to have you on board.
             </p>
             <Link
               href="/contact"
