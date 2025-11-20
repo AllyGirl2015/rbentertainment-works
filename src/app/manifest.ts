@@ -1,0 +1,28 @@
+import { MetadataRoute } from 'next'
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Reality Builders Entertainment Works',
+    short_name: 'RBEW',
+    description: "Where imagination isn't just explored, it's engineered. Crafting stories yet untold across novels, games, mods, and cinematic creations.",
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#000000',
+    theme_color: '#000000',
+    orientation: 'portrait-primary',
+    icons: [
+      {
+        src: '/icon-192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'any',
+      },
+      {
+        src: '/icon-512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any',
+      },
+    ],
+  }
+}

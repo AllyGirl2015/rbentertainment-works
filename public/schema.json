@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Reality Builders Entertainment Works",
+  "alternateName": "RBEW",
+  "url": "https://www.rbew.com",
+  "logo": "https://www.rbew.com/RBEW_logo.jpg",
+  "description": "Where imagination isn't just explored, it's engineered. Crafting stories yet untold across novels, games, mods, and cinematic creations.",
+  "foundingDate": "2015",
+  "founder": {
+    "@type": "Person",
+    "name": "Alissa M.R. Eldridge",
+    "jobTitle": "Founder & Creative Director",
+    "email": "alissarobbin2015@gmail.com"
+  },
+  "sameAs": [
+    "https://discord.gg/R27pqnfp5v",
+    "https://www.realitycentral.net"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "General Inquiries",
+    "email": "alissarobbin2015@gmail.com"
+  }
+}

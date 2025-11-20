@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+@layer components {
+  .neon-text {
+    @apply text-[#00f3ff];
+    text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff;
+  }
+  
+  .neon-text-cyan {
+    @apply text-[#0ff];
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  
+  .neon-text-purple {
+    @apply text-[#a855f7];
+    text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7;
+  }
+  
+  .neon-border {
+    @apply border-2 border-[#00f3ff];
+    box-shadow: 0 0 3px #00f3ff, 0 0 10px #00f3ff;
+  }
+  
+  .neon-border-cyan {
+    @apply border-2 border-[#0ff];
+    box-shadow: 0 0 3px #0ff, 0 0 10px #0ff;
+  }
+  
+  .neon-border-purple {
+    @apply border-2 border-[#a855f7];
+    box-shadow: 0 0 3px #a855f7, 0 0 10px #a855f7;
+  }
+  
+  .btn-neon {
+    @apply px-8 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-[#00f3ff]/10 border-2 border-[#00f3ff] text-[#00f3ff];
+  }
+  
+  .btn-neon:hover {
+    @apply bg-[#00f3ff]/20;
+    box-shadow: 0 0 5px #00f3ff, 0 0 15px #00f3ff;
+  }
+  
+  .btn-neon-cyan {
+    @apply px-8 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-[#0ff]/10 border-2 border-[#0ff] text-[#0ff];
+  }
+  
+  .btn-neon-cyan:hover {
+    @apply bg-[#0ff]/20;
+    box-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+  }
+  
+  .btn-neon-purple {
+    @apply px-8 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-[#a855f7]/30 border-2 border-[#a855f7] text-white;
+  }
+  
+  .btn-neon-purple:hover {
+    @apply bg-[#a855f7]/40;
+    box-shadow: 0 0 5px #a855f7, 0 0 15px #a855f7;
+  }
+  
+  .btn-neon-yellow {
+    @apply px-8 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-[#ffff00]/10 border-2 border-[#ffff00] text-[#ffff00];
+  }
+  
+  .btn-neon-yellow:hover {
+    @apply bg-[#ffff00]/20;
+    box-shadow: 0 0 5px #ffff00, 0 0 15px #ffff00;
+  }
+  
+  .card-neon {
+    @apply bg-black/50 backdrop-blur-sm border border-[#00f3ff]/30 rounded-lg p-6;
+    @apply hover:border-[#00f3ff]/60 transition-all duration-300;
+  }
+  
+  .card-neon:hover {
+    box-shadow: 0 0 3px #00f3ff, 0 0 10px #00f3ff;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f3ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* Screen reader only - accessible but invisible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.4s ease-out;
+}

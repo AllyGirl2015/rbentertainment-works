@@ -1,0 +1,552 @@
+🧱 PROJECTS
+“We don’t just tell stories—we build realities.”
+
+🌍 Overview / Intro Paragraph
+Welcome to the world of RBEW Projects—a creative frontier where stories, technologies, and dreams collide. Each project you see here represents a distinct vision, hand-crafted from concept to execution by a team driven to shape the future of entertainment.
+
+
+🔹 Active Project Highlights
+Each one of these can either expand into its own subsection, popup modal, or have a “Learn More” button to visit a dedicated subpage.
+
+
+🎮 Realism Hit Roleplay (FiveM)
+A hyper-realistic GTA-based roleplay world featuring layered law systems, superhuman regulation, advanced aviation, and a living city infrastructure. Custom agencies, lore, and map expansions give this server its own nation—The Unified Nation.
+
+GTA V + FiveM Framework (QB-Core)
+
+
+Superpower conduct system
+
+
+Unique factions (SGA, SHIELD, MIB, etc.)
+
+
+Custom vehicles, cities, and law codes
+
+
+
+🟩 FrameState RP (Minecraft)
+A one-of-a-kind Minecraft roleplay experience blending realistic infrastructure with fantasy elements. Players can experience power systems, city growth, NPC interactions, and choose between tech advancement or magical abilities.
+
+Vanilla-Compatible RP Framework
+
+
+Realistic vehicles, power grid, economy
+
+
+Superpower training schools
+
+
+Cinematic roleplay experiences
+
+
+
+📚 The Pendant Legacy (Book Series)
+A deeply emotional, transformation-centered trilogy exploring identity, self-worth, and love in a world where reality can shift with a single gift.
+
+A Beautiful Deception -  Published
+
+
+A Changed Parent – In progress
+
+
+Return of the Pendant – Coming Soon
+
+
+
+
+
+
+🌌 Time Police Department (TPD) – Show Series
+A sci-fi drama about agents patrolling multiversal timelines, uncovering crimes and cosmic conspiracies across the multiverse. Built like a streaming hit—with deep lore, twists, and emotional arcs that ripple across space and time.
+
+Planned for Netflix-style episodic release
+
+
+Pilot script complete
+
+
+Season arcs plotted through Season 7
+
+
+[🡺 Series Bible Coming Soon]
+
+
+
+🧠 Virtual Guardians
+A reverse-Tron meets Glitch Techs world where digital warriors enter corrupted networks and battle AI-born threats using powers formed from trauma, memory, and creativity. Crosses into reality like nothing else.
+
+Digital & emotional power systems
+
+
+Themed transformation and agency identity
+
+
+Psychological tones meet sci-fi action
+
+
+[No Content ready for display]
+
+
+
+🛠️ Upcoming Initiatives
+Projects currently in pre-production or R&D:
+
+Audio Sight: The rebirth of auditory cinema—radio drama reimagined.
+
+
+RBEW Music Collective: Composers, theme songs, and immersive scores.
+
+
+Visual Novel Engine: A possible future tool for storytelling across mediums.
+
+
+
+✨ Want to Collaborate?
+Are you a developer, writer, musician, or creative visionary?
+[📩 Contact Us] to join the next great reality we build.
+
+
+
+
+
+
+
+
+
+
+
+Visionary Pursuits
+🧠 Visionary Pursuits
+"The future isn’t predicted. It’s constructed—brick by belief."
+
+The E.A.R.T.H. Accord – Global ethics & reform framework
+
+
+Sanity Index – Experimental tool for measuring mental stability
+
+
+Social Reformation Concepts – Non-currency economies, AI ethics, civil oversight
+
+
+Technology with Purpose – Building tools that empower, not exploit
+
+
+Organization Policies – Want to know what we stand for? This is us.
+
+
+
+
+
+
+
+
+
+Realism Hit Roleplay (FiveM)
+🎮 Realism Hit Roleplay (RHRP)
+Website: www.realitycentral.net
+
+Discord: https://discord.gg/R27pqnfp5v
+
+
+Description:
+Realism Hit Roleplay is an immersive FiveM-based roleplay server designed to bring cinematic realism, multi-layered storytelling, and dynamic player interaction into one persistent, evolving world. Blending real-world systems with fictional world-building, RHRP invites players to live out careers, stories, and lives across law enforcement, criminal empires, emergency services, government factions, civilian life — and even superhuman narratives.
+
+At its heart, RHRP is about giving players freedom to build, explore, and shape a fully realized society where actions matter, decisions have weight, and choices ripple across the world.
+
+
+Intended Goals:
+✅ Create a hyper-realistic yet accessible RP server for all roleplayer types
+
+
+✅ Bridge grounded realism with immersive world-building, including supernatural and sci-fi elements
+
+
+✅ Deliver a free-to-join experience that doesn’t rely on paywalls or donation-based gates
+
+
+✅ Build a long-term, evolving server infrastructure — supported by player input, dedicated moderation, and deep storytelling
+
+
+✅ Use realitycentral.net as the central hub for news, updates, community guides, and documentation
+
+
+
+Planned Features:
+🌆 World Design
+
+Expanded map zones: Sandy Shores, Paleto Bay, Liberty City, Vice City, North Yankton, and more
+
+
+Custom minimap and postal code systems
+
+
+Dynamic interiors, custom shells, and secret locations for immersive storytelling
+
+
+🚔 Law & Order
+
+Multiple agencies including SSSO, LSPD, SAHP, BCSO, SGA, SHIELD, MIB, and more
+
+
+Realistic penal code systems by jurisdiction (city, county, state, federal)
+
+
+Fully detailed superhuman regulation laws (UN-MHRA) and the Super Response Protocol (SRP)
+
+
+🦸‍♀️ Superhuman Integration
+
+Licensed hero/villain framework with balance, accountability, and deep lore
+
+
+Asset management via Humane Labs for restricted vehicles, weapons, and tech
+
+
+Enhanced systems for event-level powers and ethical RP control
+
+
+✈️ Infrastructure & Realism
+
+Realistic aviation systems: ATC, squawk codes, flight radar, transponders
+
+
+Custom vehicular systems including damage, fuel, and crash logic
+
+
+Job systems: trucking, bus driving, towing, government roles, and more
+
+
+🌐 Player Interaction
+
+vMenu and QBCore hybrid compatibility
+
+
+Custom door locking and property systems
+
+
+Discord-based permissions tied to verified roles for streamlined access
+
+
+
+💡 Why It Matters:
+RHRP isn’t just another RP server. It’s a living sandbox for realism-focused, narrative-driven players who want more than just modded GTA. Whether you're enforcing laws, running a company, staging an uprising, or walking the path of a flawed hero… this world reacts to you.
+
+And with RealityCentral.net as your digital hub, you’ll always have access to documentation, patch notes, community events, and full integration between game and web.
+
+
+📌 Status:
+Currently in Beta Development
+Core systems being refined for performance, realism, and server-wide balance
+Community growth and staff applications open soon
+
+
+
+
+
+
+
+
+
+
+🟩 FrameState RP (Minecraft Framework)
+Discord: https://discord.gg/H8VderVNzc
+Status: Framework and world under early development
+
+
+Description:
+FrameState RP is not just a Minecraft RP server — it’s the foundation of an entire roleplay development platform. Inspired by the modular power of FiveM, FrameState is being built as a developer-friendly RP framework that gives players, storytellers, and coders full control over creating deeply immersive, realistic, or fantastical Minecraft-based roleplay worlds.
+
+Designed for Minecraft Bedrock Edition, FrameState focuses on maximum compatibility, easy distribution, and creative depth — all with minimal external mod dependencies. It will eventually ship as a standalone installable framework with core systems, sample maps, and scripts, allowing others to build and host their own FrameState-powered servers.
+
+From city governance and economics to superpower systems and voice-based immersion, FrameState RP is about creating Minecraft worlds with purpose, realism, and storytelling at their core.
+
+
+Core Vision & Goals:
+✅ Build a full RP engine inside Minecraft — inspired by FiveM but tailored for block-based creativity
+✅ Develop a customizable, redistributable framework that others can install, run, and expand
+✅ Maintain vanilla compatibility to keep it accessible for console and mobile players
+✅ Blend real-world systems (jobs, laws, infrastructure) with creative fiction (powers, multiverses, secret factions)
+✅ Provide dev tools and hooks for future communities to build their own FrameState RP networks
+
+
+Planned Features:
+🧱 Framework Capabilities
+
+Installable core files with scripted systems and visual asset support
+
+
+Custom folders for jobs, districts, powers, events, factions, and vehicles
+
+
+Developer hooks for creating quests, player data tracking, city progression, and more
+
+
+Support for both online multiplayer and LAN/singleplayer usage
+
+
+🌍 World Building (Default Map)
+
+Realistic city layout with zones for crime, commerce, housing, and schooling
+
+
+Planned schools like UA Academy, tech labs, and heroic institutions
+
+
+Metro and air traffic systems, power grids, and disaster frameworks in development
+
+
+🏛 Role & Power Systems
+
+Default RP career tree: police, EMT, delivery, government, education, and black-market roles
+
+
+Randomized power assignment system (quirk-style) with player-driven evolution
+
+
+Tech-based, supernatural, and legacy-based paths for “non-powered” characters
+
+
+Optional restrictions and cooldowns to encourage RP over chaos
+
+
+🔊 Voice Integration (via Discord)
+
+Discord bot-powered voice chat systems for proximity, radio, calls, and broadcast
+
+
+Support for “phone emulation,” faction channels, and secure lines
+
+
+🔧 Custom Engine Logic (Coming Soon)
+
+Configurable crime/law/penal code system with automated penalties
+
+
+Dynamic weather and disaster response integration
+
+
+Real-time economy engine with inflation, demand, and tax simulation
+
+
+
+🔗 Current Status:
+🧪 Framework: Core code in concept and file architecture planning
+🗺️ World: Spawn in development, default city layout being blocked out
+🛠️ Discord: Early-stage coordination and discussion
+💡 Community Dev Access: Coming soon via Discord
+
+
+💬 Final Notes:
+FrameState RP is about giving creators tools — not walls.
+Whether you're a solo storyteller, a server founder, or a school RP admin — FrameState will eventually let you install a working, expandable RP universe into any Bedrock Minecraft world.
+
+Join the Discord today to contribute ideas, watch development, or prep to become one of the first independent FrameState server owners.
+
+
+
+
+
+
+
+
+
+
+
+
+The Pendant Legacy (Book Series)
+
+
+
+          Book 1:
+
+
+
+
+          Book 2:
+
+
+
+
+
+
+A Beautiful Deception - Alissa M.R. Eldridge
+
+
+
+A Changed Parent - Alissa M.R. Eldridge
+
+
+
+Finished and published on KDP with IngramSpark coming soon.
+
+
+
+Not yet finished...
+
+
+
+
+A Beautiful Deception
+
+Title:
+A Beautiful Deception
+
+Author:
+Alissa M.R. Eldridge
+
+Genre:
+Transformation Drama · Magical Realism · Emotional Identity Fiction
+
+Description:
+When Mat receives a mysterious pendant from a close friend, he’s thrust into a world where reality reshapes around him — and within him. Transformed into a young Latina woman named Isabel, Mat must navigate the emotional labyrinth of identity, memory, and self-worth while the world insists she has always been this way. Only one person remembers the truth… and even that memory is beginning to fade.
+A Beautiful Deception is a powerful, emotionally raw story about change, love, and the price of becoming who you never expected to be.
+
+Notes:
+
+First in The Pendant Legacy trilogy
+
+
+Explores gender, transformation, reality rewriting, and emotional authenticity
+
+
+Contains subtle romance, personal growth, and a deeply introspective tone
+
+
+Available now in paperback and eBook formats
+
+
+Features the deeply complex Isabel, whose inner strength and evolving identity anchor the entire series
+
+
+ 📚 Available on: KDP | (IngramSpark Coming Soon) 
+
+
+
+
+
+
+ A Changed Parent
+
+Title:
+A Changed Parent
+
+Author:
+Alissa M.R. Eldridge
+
+Genre:
+Transformation Drama · Family Fiction · Emotional Realism
+
+Description:
+Isabel never imagined parenthood would become part of her rewritten life — especially not so soon after learning how to live in her own skin. But when she becomes the mother of a newborn daughter, Rosa, she must discover how to nurture another life while still healing her own. Supported by her partner Gabriel, her loving family, and the woman whose name her daughter now carries, Isabel begins to understand the power of generational love, legacy, and chosen transformation.
+A Changed Parent is a heartfelt exploration of identity, family, and the quiet strength it takes to be both a daughter and a mother.
+
+Notes:
+
+Second in The Pendant Legacy trilogy
+
+
+Focuses on motherhood, healing, generational wisdom, and emotional grounding
+
+
+Deepens Isabel’s journey while introducing new family dynamics
+
+
+Blends introspective drama with heartwarming moments of family connection
+
+
+Available soon in paperback and eBook formats
+
+
+Features the birth of baby Rosa and the return of Grandmother Rosa, tying past and present together with love
+
+
+[Not yet completed]
+
+
+📘 Coming soon to: KDP | IngramSpark 
+
+
+
+
+
+
+
+
+Time Police Department (TPD) – Show Series
+🕒 Time Police Department (TPD)
+Logo Meaning: The badge of the Time Police is a clock — its hands forever fixed to the moment of first activation. The small green block? A hidden timestamp, referencing the first chronal recording in TPD lore… and Alissa’s very first YouTube upload.
+
+
+Description:
+Time Police Department (TPD) is a multiverse-spanning sci-fi epic built around a single impossible mission: protecting the timeline from itself. Combining the existential weight of Detroit: Become Human with the mind-bending twists of Doctor Who and Loki, TPD follows a tactical organization that monitors reality’s fractures — and the unstable beings who try to break it.
+
+Each episode weaves personal struggle, paradox law, and high-stakes investigation, following field agents assigned to correct anomalies across diverging realities. But some timelines fight back. And some truths… weren’t meant to be remembered.
+
+
+Core Themes:
+Temporal ethics — What does it mean to "fix" a timeline?
+
+
+Identity conflict — Who are you when your history is overwritten?
+
+
+Multiversal balance — Which worlds deserve to survive?
+
+
+Power vs accountability — What happens when the keepers of time become its greatest threat?
+
+
+
+Project Format:
+✅ Full-screen show series concept — with cinematic ambitions and multiple seasons planned
+✅ Pilot written and scripted (Season 1, Episode 1 complete)
+✅ Future companion novel adaptation in planning
+✅ Central to the Grand Existence universe, connecting to other timelines like Virtual Guardians and The Pendant Legacy
+
+
+Planned Features:
+🕵️‍♂️ Characters & Divisions
+
+Agents like Jean A-2015 and Jean A-143 — reflections of morality across diverging fates
+
+
+TPD is split into units (Field, Observation, Reset, Blackout) each with unique duties and protocols
+
+
+Time travel tech includes anchor watches, temporal seals, and paradox engines
+
+
+⌛ Chrono Law & Universe Structure
+
+The Prime Directive of Time: no timeline may be corrected for personal gain
+
+
+Temporal crimes are categorized from Class-1 to Blackout Events
+
+
+Paradox offenders may be wiped, sealed in chronal cells, or… recruited
+
+
+🌌 Narrative Format
+
+Each episode focuses on a new temporal threat — weaving in season-long arcs
+
+
+Background threads explore TPD's possible corruption, rogue agents, and forgotten histories
+
+
+
+
+🔗 Current Status:
+📝 Pilot script completed
+🧩 Season roadmap in active outlining
+🎨 Concept art and visual assets in production
+📚 Tie-in lore integration with other Grand Existence projects under way
+
+
+🕯️ Final Note:
+You can’t save every timeline… but some will never forgive you for trying.
+
+Time bends. Choices echo. And the Time Police are all that stands between chaos… and everything else.
+
