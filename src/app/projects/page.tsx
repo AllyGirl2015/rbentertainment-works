@@ -5,6 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, MessageCircle, Book, Layers, Sparkles, Zap } from "lucide-react";
 
+import Image from "next/image";
+
 const projects = [
   {
     id: "realism-hit-roleplay",
@@ -13,6 +15,7 @@ const projects = [
     description: "A hyper-realistic GTA-based roleplay world featuring layered law systems, superhuman regulation, advanced aviation, and a living city infrastructure.",
     tags: ["GTA V", "FiveM", "QB-Core", "Roleplay"],
     status: "Beta Development",
+    image: "/realism-hit-logo.png",
     links: {
       website: "https://www.realitycentral.net",
       discord: "https://discord.gg/R27pqnfp5v",
@@ -25,6 +28,7 @@ const projects = [
     description: "A one-of-a-kind Minecraft roleplay experience blending realistic infrastructure with fantasy elements - built as a redistributable framework.",
     tags: ["Minecraft", "Bedrock", "Framework", "RP Engine"],
     status: "Early Development",
+    image: "/framestate-rp.png",
     links: {
       discord: "https://discord.gg/H8VderVNzc",
     },
@@ -36,11 +40,21 @@ const projects = [
     description: "A deeply emotional, transformation-centered trilogy exploring identity, self-worth, and love in a world where reality can shift with a single gift.",
     tags: ["Novel", "LGBTQ+", "Transformation", "Drama"],
     status: "Book 1 Published",
+    image: "/a-beautiful-deception.png",
     books: [
       { title: "A Beautiful Deception", status: "Published" },
       { title: "A Changed Parent", status: "In Progress" },
       { title: "Return of the Pendant", status: "Coming Soon" },
     ],
+  },
+  {
+    id: "reality-radio-network",
+    title: "Reality Radio Network",
+    subtitle: "Internet Radio & Music",
+    description: "The future of music starts here. Original artists with real emotion. Discover authentic sound, unique personas, and the next generation of music.",
+    tags: ["Music", "Radio", "AI Artists", "Streaming"],
+    status: "Live",
+    image: "/RRN_logo.jpg",
   },
   {
     id: "time-police-department",
@@ -49,6 +63,7 @@ const projects = [
     description: "A sci-fi drama about agents patrolling multiversal timelines, uncovering crimes and cosmic conspiracies across the multiverse.",
     tags: ["TV Series", "Sci-Fi", "Multiverse", "Time Travel"],
     status: "Pilot Complete",
+    image: "/time-police-department.png",
   },
   {
     id: "virtual-guardians",
@@ -103,7 +118,19 @@ export default function ProjectsPage() {
                 href={`/projects/${project.id}`}
                 className="group block h-full bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-blue-400/50 transition-all duration-300 hover:bg-white/10 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 relative overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/20 transition-colors duration-500"></div>
+                {project.image ? (
+                  <div className="absolute top-0 right-0 w-full h-full opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                  </div>
+                ) : (
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/20 transition-colors duration-500"></div>
+                )}
                 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex items-start justify-between mb-6">

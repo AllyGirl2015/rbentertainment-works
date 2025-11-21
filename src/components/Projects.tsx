@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, ExternalLink, Gamepad2, Book, Tv, Monitor } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowRight, ExternalLink, Gamepad2, Book, Tv, Monitor, Radio } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Projects() {
@@ -11,36 +12,50 @@ export default function Projects() {
       description: 'A hyper-realistic GTA-based roleplay world featuring layered law systems, superhuman regulation, advanced aviation, and a living city infrastructure.',
       platform: 'FiveM',
       status: 'Active Development',
-      link: '#',
+      link: '/projects/realism-hit-roleplay',
       icon: Gamepad2,
-      color: 'from-green-500 to-emerald-700'
+      color: 'from-green-500 to-emerald-700',
+      image: '/realism-hit-logo.png'
     },
     {
       title: 'FrameState RP',
       description: 'A one-of-a-kind Minecraft roleplay experience blending realistic infrastructure with fantasy elements.',
       platform: 'Minecraft',
       status: 'Beta',
-      link: '#',
+      link: '/projects/framestate-rp',
       icon: Monitor,
-      color: 'from-blue-500 to-cyan-700'
+      color: 'from-blue-500 to-cyan-700',
+      image: '/framestate-rp.png'
     },
     {
       title: 'The Pendant Legacy',
       description: 'A deeply emotional, transformation-centered trilogy exploring identity, self-worth, and love in a world where reality can shift with a single gift.',
       platform: 'Novel Series',
       status: 'Book 1 Published',
-      link: '#',
+      link: '/projects/pendant-legacy',
       icon: Book,
-      color: 'from-purple-500 to-pink-700'
+      color: 'from-purple-500 to-pink-700',
+      image: '/a-beautiful-deception.png'
+    },
+    {
+      title: 'Reality Radio Network',
+      description: 'The future of music starts here. Original artists with real emotion. Discover authentic sound, unique personas, and the next generation of music.',
+      platform: 'Internet Radio',
+      status: 'Live',
+      link: '/projects/reality-radio-network',
+      icon: Radio,
+      color: 'from-pink-500 to-rose-700',
+      image: '/RRN_logo.jpg'
     },
     {
       title: 'Time Police Department',
       description: 'A sci-fi drama about agents patrolling multiversal timelines, uncovering crimes and cosmic conspiracies across the multiverse.',
       platform: 'TV Series',
       status: 'In Development',
-      link: '#',
+      link: '/projects/time-police-department',
       icon: Tv,
-      color: 'from-orange-500 to-red-700'
+      color: 'from-orange-500 to-red-700',
+      image: '/time-police-department.png'
     },
   ];
 
@@ -82,8 +97,20 @@ export default function Projects() {
                 href={project.link}
                 className="group relative bg-black/40 border border-white/10 rounded-3xl p-8 overflow-hidden hover:border-white/20 transition-all duration-500 hover:-translate-y-1 block h-full"
               >
-                {/* Background Gradient on Hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                {/* Background Image */}
+                {project.image ? (
+                  <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                  </div>
+                ) : (
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                )}
                 
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-6">

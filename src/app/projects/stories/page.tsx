@@ -1,5 +1,6 @@
 import { BookOpen, ArrowLeft, Clock, Shield } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Stories | RB Entertainment Works',
@@ -32,8 +33,13 @@ export default function StoriesPage() {
             <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">The Pendant Legacy</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
-                <div className="h-48 bg-gradient-to-br from-pink-900 to-black rounded-xl mb-6 flex items-center justify-center">
-                  <BookOpen className="w-16 h-16 text-white/20 group-hover:text-white/40 transition-colors" />
+                <div className="h-48 bg-gradient-to-br from-pink-900 to-black rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
+                  <Image
+                    src="/a-beautiful-deception.png"
+                    alt="A Beautiful Deception"
+                    fill
+                    className="object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-white">A Beautiful Deception</h3>
                 <p className="text-sm text-pink-400 mb-4 font-mono">Book 1 • Available Now</p>
@@ -46,8 +52,13 @@ export default function StoriesPage() {
               </div>
 
               <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
-                <div className="h-48 bg-gradient-to-br from-purple-900 to-black rounded-xl mb-6 flex items-center justify-center">
-                  <BookOpen className="w-16 h-16 text-white/20 group-hover:text-white/40 transition-colors" />
+                <div className="h-48 bg-gradient-to-br from-purple-900 to-black rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
+                  <Image
+                    src="/a-changed-parent.png"
+                    alt="A Changed Parent"
+                    fill
+                    className="object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-white">A Changed Parent</h3>
                 <p className="text-sm text-purple-400 mb-4 font-mono">Book 2 • In Progress</p>
@@ -66,8 +77,13 @@ export default function StoriesPage() {
             <h2 className="text-3xl font-bold text-white mb-8 border-b border-white/10 pb-4">Show Series Concepts</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
-                <div className="h-48 bg-gradient-to-br from-blue-900 to-black rounded-xl mb-6 flex items-center justify-center">
-                  <Clock className="w-16 h-16 text-white/20 group-hover:text-white/40 transition-colors" />
+                <div className="h-48 bg-gradient-to-br from-blue-900 to-black rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
+                  <Image
+                    src="/time-police-department.png"
+                    alt="Time Police Department"
+                    fill
+                    className="object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-white">Time Police Department (TPD)</h3>
                 <p className="text-gray-400 mb-6">

@@ -1,5 +1,6 @@
 import { Gamepad2, ArrowLeft, Globe, Server, Box } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Games | RB Entertainment Works',
@@ -31,8 +32,13 @@ export default function GamesPage() {
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="w-full md:w-1/3 h-64 bg-gradient-to-br from-purple-900 to-black rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity"></div>
-                <Globe className="w-20 h-20 text-white/80 relative z-10" />
+                <Image
+                  src="/realism-hit-logo.png"
+                  alt="Realism Hit Roleplay"
+                  fill
+                  className="object-cover object-center opacity-60 group-hover:opacity-80 transition-opacity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -66,8 +72,13 @@ export default function GamesPage() {
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="w-full md:w-1/3 h-64 bg-gradient-to-br from-green-900 to-black rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607656311408-1e4c6a73afaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity"></div>
-                <Box className="w-20 h-20 text-white/80 relative z-10" />
+                <Image
+                  src="/framestate-rp.png"
+                  alt="FrameState RP"
+                  fill
+                  className="object-cover object-center opacity-60 group-hover:opacity-80 transition-opacity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3 mb-4">

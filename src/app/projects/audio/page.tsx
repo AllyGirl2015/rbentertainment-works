@@ -1,5 +1,6 @@
-import { Headphones, ArrowLeft, Mic2, Music } from 'lucide-react';
+import { Headphones, ArrowLeft, Mic2, Music, Radio } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Audio | RB Entertainment Works',
@@ -27,9 +28,34 @@ export default function AudioPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Reality Radio Network */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
+            <div className="h-48 bg-gradient-to-br from-pink-900 to-black rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
+              <Image
+                src="/RRN_logo.jpg"
+                alt="Reality Radio Network"
+                fill
+                className="object-cover object-center opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <h3 className="text-2xl font-bold mb-3 text-white">Reality Radio Network</h3>
+            <p className="text-gray-400 mb-6">
+              The future of music starts here. Original artists with real emotion. Discover authentic sound, unique personas, and the next generation of music.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <a href="https://www.realityradionetwork.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg font-bold transition-colors flex items-center gap-2 text-sm">
+                <Radio className="w-4 h-4" /> Listen Now
+              </a>
+            </div>
+            <span className="inline-block px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium border border-pink-500/30">
+              Live
+            </span>
+          </div>
+
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all group">
             <div className="h-48 bg-gradient-to-br from-cyan-900 to-black rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
-              <Mic2 className="w-16 h-16 text-white/20 group-hover:text-white/40 transition-colors" />
+              <Mic2 className="w-16 h-16 text-white/20 group-hover:text-white/40 transition-colors relative z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
             <h3 className="text-2xl font-bold mb-3 text-white">Audio Sight</h3>
             <p className="text-gray-400 mb-6">

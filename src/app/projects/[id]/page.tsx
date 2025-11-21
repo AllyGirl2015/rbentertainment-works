@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Target, Sparkles, BookOpen, Send } from "lucide-react";
 
+import Image from "next/image";
+
 interface ProjectData {
   id: string;
   title: string;
@@ -11,6 +13,7 @@ interface ProjectData {
   fullDescription: string[];
   tags: string[];
   status: string;
+  image?: string;
   links?: {
     website?: string;
     discord?: string;
@@ -35,6 +38,7 @@ const projectsData: Record<string, ProjectData> = {
     title: "Realism Hit Roleplay",
     subtitle: "FiveM Roleplay Server",
     description: "A hyper-realistic GTA-based roleplay world featuring layered law systems, superhuman regulation, advanced aviation, and a living city infrastructure.",
+    image: "/realism-hit-logo.png",
     fullDescription: [
       "Realism Hit Roleplay is an immersive FiveM-based roleplay server designed to bring cinematic realism, multi-layered storytelling, and dynamic player interaction into one persistent, evolving world.",
       "Blending real-world systems with fictional world-building, RHRP invites players to live out careers, stories, and lives across law enforcement, criminal empires, emergency services, government factions, civilian life — and even superhuman narratives.",
@@ -101,6 +105,7 @@ const projectsData: Record<string, ProjectData> = {
     title: "FrameState RP",
     subtitle: "Minecraft Roleplay Framework",
     description: "A one-of-a-kind Minecraft roleplay experience blending realistic infrastructure with fantasy elements - built as a redistributable framework.",
+    image: "/framestate-rp.png",
     fullDescription: [
       "FrameState RP is not just a Minecraft RP server — it's the foundation of an entire roleplay development platform. Inspired by the modular power of FiveM, FrameState is being built as a developer-friendly RP framework.",
       "Designed for Minecraft Bedrock Edition, FrameState focuses on maximum compatibility, easy distribution, and creative depth — all with minimal external mod dependencies.",
@@ -159,6 +164,7 @@ const projectsData: Record<string, ProjectData> = {
     title: "The Pendant Legacy",
     subtitle: "Book Trilogy",
     description: "A deeply emotional, transformation-centered trilogy exploring identity, self-worth, and love in a world where reality can shift with a single gift.",
+    image: "/a-beautiful-deception.png",
     fullDescription: [
       "The Pendant Legacy is a groundbreaking trilogy that explores transformation, identity, and the nature of reality itself through the lens of deeply personal storytelling.",
       "Written by Alissa M.R. Eldridge, these books blend magical realism with emotional drama to create stories that resonate on multiple levels — as entertainment, as representation, and as truth.",
@@ -194,6 +200,7 @@ const projectsData: Record<string, ProjectData> = {
     title: "Time Police Department",
     subtitle: "Sci-Fi Show Series",
     description: "A sci-fi drama about agents patrolling multiversal timelines, uncovering crimes and cosmic conspiracies across the multiverse.",
+    image: "/time-police-department.png",
     fullDescription: [
       "Time Police Department (TPD) is a multiverse-spanning sci-fi epic built around a single impossible mission: protecting the timeline from itself.",
       "Combining the existential weight of Detroit: Become Human with the mind-bending twists of Doctor Who and Loki, TPD follows a tactical organization that monitors reality's fractures — and the unstable beings who try to break it.",
@@ -227,6 +234,41 @@ const projectsData: Record<string, ProjectData> = {
         ],
       },
     ],
+  },
+  "reality-radio-network": {
+    id: "reality-radio-network",
+    title: "Reality Radio Network",
+    subtitle: "Internet Radio & Music Platform",
+    description: "The future of music starts here. Original artists with real emotion. Discover authentic sound, unique personas, and the next generation of music at Reality Radio Network.",
+    image: "/RRN_logo.jpg",
+    fullDescription: [
+      "The Reality Radio Network is more than a group of radio stations. It's a movement. A heartbeat. A voice for the real.",
+      "Powered by RBEW. Built from Passion, Driven by Purpose.",
+      "Whether it's country, rock, rap, pop, or something wildly experimental… RRN gives sound to the stories that need to be heard. From heartfelt anthems to rebellious truths, we curate what matters."
+    ],
+    tags: ["Music", "Radio", "AI Artists", "Streaming", "Original Content"],
+    status: "Live",
+    links: {
+      website: "https://www.realityradionetwork.com",
+    },
+    features: [
+      {
+        category: "🎵 Core Experience",
+        items: [
+          "22+ original artists with unique personas and backstories",
+          "9 radio stations covering diverse genres",
+          "Authentic sound driven by real emotion and storytelling"
+        ]
+      },
+      {
+        category: "🚀 The Vision",
+        items: [
+          "Giving sound to stories that need to be heard",
+          "From heartfelt anthems to rebellious truths",
+          "A platform for the next generation of music"
+        ]
+      }
+    ]
   },
   "virtual-guardians": {
     id: "virtual-guardians",
@@ -301,6 +343,20 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           </span>
           Back to All Projects
         </Link>
+
+        {/* Project Image Banner */}
+        {project.image && (
+          <div className="relative w-full h-64 md:h-96 rounded-3xl overflow-hidden mb-12 border border-white/10 shadow-2xl">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover object-center"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          </div>
+        )}
 
         {/* Header */}
         <div className="mb-16">

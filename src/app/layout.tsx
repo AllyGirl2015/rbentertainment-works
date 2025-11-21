@@ -81,6 +81,9 @@ export const metadata: Metadata = {
     // bing: 'your-bing-verification-code',
   },
   category: 'entertainment',
+  icons: {
+    icon: '/RBEW_logo.ico',
+  },
 };
 
 export default function RootLayout({
@@ -94,7 +97,6 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <script
