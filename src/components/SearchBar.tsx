@@ -93,7 +93,7 @@ export default function SearchBar() {
     });
 
     setResults(filtered.slice(0, 8)); // Limit results
-  }, [query]);
+  }, [query, allData]);
 
   const getTypeIcon = (type: string) => {
     switch (type) {
