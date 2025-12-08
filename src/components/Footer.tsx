@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Twitter, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Heart, Instagram, Youtube, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-64 bg-gradient-to-t from-purple-900/20 to-transparent pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           {/* Brand Column */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
@@ -46,14 +46,17 @@ export default function Footer() {
               Where imagination isn&apos;t just explored, it&apos;s engineered. We are a creative studio dedicated to building immersive worlds across multiple mediums.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-cyan-400 transition-colors">
-                <Twitter className="w-5 h-5" />
+              <a href="https://www.instagram.com/rbentertainmemtworks?igsh=a3VvbGFqNmxzMWRx" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-pink-400 transition-colors">
+                <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-purple-400 transition-colors">
-                <Github className="w-5 h-5" />
+              <a href="https://www.tiktok.com/@rbentertainmentworks?_r=1&_t=ZT-91KyKneaFRn" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-cyan-400 transition-colors">
+                <span className="text-lg font-bold">t</span>
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-pink-400 transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="https://youtube.com/@r.b.e.w.?si=xq82NUDk5HaDz755" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-red-400 transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="https://discord.gg/R27pqnfp5v" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-white/10 hover:text-indigo-400 transition-colors">
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -110,6 +113,31 @@ export default function Footer() {
                   <span className="w-1 h-1 bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Organization Policies
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Reality Radio Network */}
+          <div>
+            <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Reality Radio Network</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://www.realityradionetwork.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-pink-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Website
+                </a>
+              </li>
+              <li>
+                <a href="discord.realityradionetwork.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-indigo-400 text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com/@rbewrrn?si=4P81JDgKlYuaZAR-" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-400 text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  YouTube
+                </a>
               </li>
             </ul>
           </div>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown, Home, Info, Briefcase, Users, Mail, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
+import SearchBar from './SearchBar';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -95,6 +96,10 @@ export default function Header() {
               <ShoppingBag className="w-4 h-4" />
               Store
             </Link>
+
+            <div className="h-6 w-px bg-white/10 mx-2"></div>
+
+            <SearchBar />
             
             <Link href="/contact" className="relative px-6 py-2.5 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full text-white text-sm font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300 flex items-center gap-2 group">
               <Mail className="w-4 h-4" />
