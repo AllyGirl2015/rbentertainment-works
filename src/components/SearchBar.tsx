@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Search, X, Music2, Disc, User, Gamepad2, Book, Globe, ExternalLink } from 'lucide-react';
-import Link from 'next/link';
+import { Search, X, Music2, Disc, User, Gamepad2, Globe, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -16,6 +15,41 @@ interface SearchResult {
   isExternal?: boolean;
 }
 
+// Static data - moved outside component to prevent re-creation
+const rrnData: SearchResult[] = [
+  // Albums
+  { id: 'rrn-1', title: "America's Changed", subtitle: 'Johnathan Gold', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/americas-changed', image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-2', title: 'Heartfelt Rebellion', subtitle: 'Johnathan Gold', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/heartfelt-rebellion', image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-3', title: 'Shattered Peaces', subtitle: 'Mathew Cage', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/shattered-peaces', image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-4', title: 'Barefoot Supernova', subtitle: 'Kaira Heartfelt', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/barefoot-supernova', image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-14', title: 'Descend', subtitle: 'Chronix', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/descend', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
+  // Singles
+  { id: 'rrn-5', title: 'Chaos Country', subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/chaos-country', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-6', title: "America's Changed", subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/americas-changed', image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-7', title: 'Heartfelt Rebellion', subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/heartfelt-rebellion', image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-8', title: 'World of Gold', subtitle: 'Mathew Cage', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/world-of-gold', image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-9', title: 'Fallen Flag', subtitle: 'Mathew Cage', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/fallen-flag', image: 'https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-10', title: 'Evil Love', subtitle: 'Kaira Heartfelt', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/evil-love', image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=200&h=200&fit=crop', isExternal: true },
+  // Artists
+  { id: 'rrn-11', title: 'Johnathan Gold & Guilded Hearts', subtitle: 'Country / Americana', type: 'artist', href: 'https://www.realityradionetwork.com/talent/johnathan-gold', image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-12', title: 'Mathew Cage', subtitle: 'Alt Rock / Emotional Rock', type: 'artist', href: 'https://www.realityradionetwork.com/talent/mathew-cage', image: 'https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-13', title: 'Kaira Heartfelt', subtitle: 'Country-Pop', type: 'artist', href: 'https://www.realityradionetwork.com/talent/kaira-heartfelt', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
+  { id: 'rrn-15', title: 'Chronix', subtitle: 'Electronic / Synthwave', type: 'artist', href: 'https://www.realityradionetwork.com/talent/chronix', image: '/Chronix.svg', isExternal: true },
+];
+
+const localData: SearchResult[] = [
+  { id: 'local-1', title: 'Realism Hit Roleplay', subtitle: 'FiveM Server', type: 'project', href: '/projects/realism-hit-roleplay', image: '/realism-hit-logo.png' },
+  { id: 'local-2', title: 'FrameState RP', subtitle: 'Minecraft Framework', type: 'project', href: '/projects/framestate-rp', image: '/framestate-rp.png' },
+  { id: 'local-3', title: 'The Pendant Legacy', subtitle: 'Book Trilogy', type: 'project', href: '/projects/pendant-legacy', image: '/a-beautiful-deception.png' },
+  { id: 'local-4', title: 'Reality Radio Network', subtitle: 'Music Platform', type: 'project', href: '/projects/reality-radio-network', image: '/RRN_logo.jpg' },
+  { id: 'local-5', title: 'Time Police Department', subtitle: 'TV Series Concept', type: 'project', href: '/projects/time-police-department', image: '/time-police-department.png' },
+  { id: 'local-6', title: 'About Us', subtitle: 'Our History', type: 'page', href: '/about' },
+  { id: 'local-7', title: 'Contact', subtitle: 'Get in Touch', type: 'page', href: '/contact' },
+  { id: 'local-8', title: 'Team', subtitle: 'Meet the Creators', type: 'page', href: '/team' },
+];
+
+const allSearchData = [...localData, ...rrnData];
+
 export default function SearchBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -23,45 +57,7 @@ export default function SearchBar() {
   const searchRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  // Data from Reality Radio Network (External)
-  const rrnData: SearchResult[] = [
-    // Albums
-    { id: 'rrn-1', title: "America's Changed", subtitle: 'Johnathan Gold', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/americas-changed', image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-2', title: 'Heartfelt Rebellion', subtitle: 'Johnathan Gold', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/heartfelt-rebellion', image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-3', title: 'Shattered Peaces', subtitle: 'Mathew Cage', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/shattered-peaces', image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-4', title: 'Barefoot Supernova', subtitle: 'Kaira Heartfelt', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/barefoot-supernova', image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-14', title: 'Descend', subtitle: 'Chronix', type: 'album', href: 'https://www.realityradionetwork.com/store/albums/descend', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
-    
-    // Singles
-    { id: 'rrn-5', title: 'Chaos Country', subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/chaos-country', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-6', title: "America's Changed", subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/americas-changed', image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-7', title: 'Heartfelt Rebellion', subtitle: 'Johnathan Gold', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/heartfelt-rebellion', image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-8', title: 'World of Gold', subtitle: 'Mathew Cage', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/world-of-gold', image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-9', title: 'Fallen Flag', subtitle: 'Mathew Cage', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/fallen-flag', image: 'https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-10', title: 'Evil Love', subtitle: 'Kaira Heartfelt', type: 'single', href: 'https://www.realityradionetwork.com/store/singles/evil-love', image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=200&h=200&fit=crop', isExternal: true },
-    
-    // Artists
-    { id: 'rrn-11', title: 'Johnathan Gold & Guilded Hearts', subtitle: 'Country / Americana', type: 'artist', href: 'https://www.realityradionetwork.com/talent/johnathan-gold', image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-12', title: 'Mathew Cage', subtitle: 'Alt Rock / Emotional Rock', type: 'artist', href: 'https://www.realityradionetwork.com/talent/mathew-cage', image: 'https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-13', title: 'Kaira Heartfelt', subtitle: 'Country-Pop', type: 'artist', href: 'https://www.realityradionetwork.com/talent/kaira-heartfelt', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop', isExternal: true },
-    { id: 'rrn-15', title: 'Chronix', subtitle: 'Electronic / Synthwave', type: 'artist', href: 'https://www.realityradionetwork.com/talent/chronix', image: '/Chronix.svg', isExternal: true },
-  ];
-
-  // Local Data (RBEW)
-  const localData: SearchResult[] = [
-    { id: 'local-1', title: 'Realism Hit Roleplay', subtitle: 'FiveM Server', type: 'project', href: '/projects/realism-hit-roleplay', image: '/realism-hit-logo.png' },
-    { id: 'local-2', title: 'FrameState RP', subtitle: 'Minecraft Framework', type: 'project', href: '/projects/framestate-rp', image: '/framestate-rp.png' },
-    { id: 'local-3', title: 'The Pendant Legacy', subtitle: 'Book Trilogy', type: 'project', href: '/projects/pendant-legacy', image: '/a-beautiful-deception.png' },
-    { id: 'local-4', title: 'Reality Radio Network', subtitle: 'Music Platform', type: 'project', href: '/projects/reality-radio-network', image: '/RRN_logo.jpg' },
-    { id: 'local-5', title: 'Time Police Department', subtitle: 'TV Series Concept', type: 'project', href: '/projects/time-police-department', image: '/time-police-department.png' },
-    { id: 'local-6', title: 'About Us', subtitle: 'Our History', type: 'page', href: '/about' },
-    { id: 'local-7', title: 'Contact', subtitle: 'Get in Touch', type: 'page', href: '/contact' },
-    { id: 'local-8', title: 'Team', subtitle: 'Meet the Creators', type: 'page', href: '/team' },
-  ];
-
-  const allData = [...localData, ...rrnData];
-
-  // Close on outside click
+  // Close on outside click  // Close on outside click
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -85,7 +81,7 @@ export default function SearchBar() {
     }
 
     const searchTerm = query.toLowerCase();
-    const filtered = allData.filter((item) => {
+    const filtered = allSearchData.filter((item) => {
       return (
         item.title.toLowerCase().includes(searchTerm) ||
         item.subtitle.toLowerCase().includes(searchTerm)
@@ -93,7 +89,7 @@ export default function SearchBar() {
     });
 
     setResults(filtered.slice(0, 8)); // Limit results
-  }, [query, allData]);
+  }, [query]);
 
   const getTypeIcon = (type: string) => {
     switch (type) {
