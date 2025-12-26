@@ -81,7 +81,7 @@ export default function TeamPage() {
                   A Mind Shaped by Wonder
                 </h3>
                 <p>
-                  With a genius-level IQ, Alissa has a mind wired for innovation, layering logical frameworks, emotional storytelling, and deep introspection into everything she creates. But she never leads with ego—only with purpose.
+                  With her brilliant mind, Alissa blends logical frameworks, emotional storytelling, and deep introspection into everything she creates. But she never leads with ego—only with purpose.
                 </p>
 
                 <h3 className="text-xl font-bold text-white mt-8 mb-4 flex items-center gap-2">
